@@ -1,0 +1,191 @@
+/*css syntax*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    background-color: #081b29;
+    color: white;
+}
+
+.home{
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    width: 80%;
+    padding: 20px 10%;
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: none;
+    color: #00abf0;
+}
+
+
+.class{
+      font-size: 25px;
+      color: #ededed;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline;
+}
+
+.topnav a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    display: inline;
+}
+
+.topnav a:hover,
+.topnav a.active {
+    color: #00abf0;
+}
+
+.active a:hover{
+    color: #00abf0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+.content{
+    max-width: 600px;
+}
+
+.content h1{
+    line-height: 1.2;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.content h2{
+    font-size: 22px;
+    font-weight: 600%;
+    color: #00abf0;
+}
+
+.box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container p{
+    font-size: 16px;
+    margin: 20px 0px 40px;
+}
+
+.box a{
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.box a:hover{
+    color: #00abf0;
+}
+.box a:nth-child(2){
+    background:transparent;
+    color: #00abf0;
+}
+
+.box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.box a:nth-child(2)::before{
+      background: #00abf0;
+}
+
+.box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.box a:hover:before{
+    width: 100%;
+}
+
+.social-media{
+    margin-left: 10em;
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-media a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 70%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.social-media a:hover {
+    color: #081b29;
+}
+
+
+.social-media a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background: none;
+    z-index: 1;
+    transition: .5s;
+}
+
+.social-media a:hover:before{
+    width: 100%;
+}
